@@ -1,0 +1,165 @@
+* {
+  font-family: Verdana;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background-color: blue;
+  margin: 0px;
+  padding: 0px 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+header #headerTitulo {
+  position: relative;
+  right: -85%;
+  background-color: white;
+  height: 30px;
+  top: -15px;
+  
+}
+
+header #headerLogo {
+  position: relative;
+  left: -110px;
+  height: 80px;
+  top: 50%;
+  background-color: white;
+  border-radius: 50%;
+}
+
+body form {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+body form ul li {
+  display: flex;
+}
+
+body form ul li textarea {
+
+  width: 900px;
+  min-height:20px;
+  max-height: 100px;
+  text-transform: capitalize;
+}
+
+textarea {
+  resize: vertical;
+  display: block !important;
+}
+
+.liElement {
+  height: 20px;
+  margin: 0px;
+  padding: 2px;
+}
+
+.subtitulo {
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 0px 10px;
+}
+
+*::placeholder {
+  color: gray;
+  font-size: 14px;
+  padding-left: 5px;
+  font-weight: normal;
+}
+
+#titulo {
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 100px;
+}
+
+#titulo textarea {
+  text-align: center;
+  width: 30%;
+  min-width: 30%;
+  max-width: 90%;
+  font-weight: bold;
+  text-transform: uppercase;
+  resize: horizontal;
+}
+
+#titulo input::placeholder {
+  text-align: center;
+  font-weight: bold;
+}
+
+#addButton{
+    width: 40%;
+    margin: 30px 30%;
+    height: 25px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#addButton:hover{
+    background-color: rgb(6, 6, 119);
+}
+
+#imageInput{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#imageInput input{
+    height: 20px;
+    margin-right: 10px;
+    width: 400px;
+}
+
+#imageInput label{
+    height: 20px;
+    margin-right: 10px;
+}
+
+#image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+#image p {
+  text-align: center;
+  font-size: 12px;
+}
+
+#imageArea {
+  border: 1px solid gray;
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
