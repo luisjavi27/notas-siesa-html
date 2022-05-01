@@ -1,0 +1,31 @@
+{
+  "name": "notas-siesa-html",
+  "version": "1.0.0",
+  "description": "Ayuda para generar texto en html para agragar notas con un formato basico en SIESA",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisjavi27/notas-siesa-html.git"
+  },
+  "keywords": [
+    "node",
+    "electron",
+    "app",
+    "desktop",
+    "javascript",
+    "siesa",
+    "html"
+  ],
+  "author": "Luis Javier Iglesias",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luisjavi27/notas-siesa-html/issues"
+  },
+  "homepage": "https://github.com/luisjavi27/notas-siesa-html#readme",
+  "devDependencies": {
+    "electron": "^18.2.0"
+  }
+}
