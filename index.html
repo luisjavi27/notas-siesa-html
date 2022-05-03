@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self'">
-    <meta http-equiv="X-Content-Security-Policy" content="default-src *; script-src 'self'">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src *; script-src 'self'"> -->
     
     <link rel="stylesheet" href="css/style.css">
     
@@ -13,6 +13,7 @@
     <header>
         <img id="headerLogo" src="./assets/logoBig.svg" >
     </header>
+    <div id="containerGeneral">
     <form>
         <ul id="items">
             <div id="itemsArea">
@@ -25,13 +26,13 @@
                     <textarea class="liElement" id="inputDescripcion1" rows="1" cols = "60" placeholder="Descripción..." autocomplete="off"></textarea>
                 </li>   
             </div>
-            
+
             <button id="addButton">+</button>
 
             <div id="imageInput">
                 <label for="urlImageInput">URL imagen: </label>
                 <input id="urlImageInput" type="url" placeholder="https://www...">
-                <button id="btnCargarUrlImagen" name="loadImage"> Cargar </button>
+                <div id="btnCargarUrlImagen"  > Cargar </div>
             </div>
             <div id="image">
                 
@@ -45,9 +46,23 @@
         
         
     </form>
-    <div id="containerCopyIcon">
-        <img id="copyIcon" src="./assets/file-code-regular.svg" >
+    <div id="containerOutput">
+        <div id="containerIcons">
+
+            <div id="containerCopyIcon">
+                <img id="copyIcon" src="./assets/file-code-regular.svg" >
+            </div>
+
+            <div id="containerGenerateIcon">
+                <img id="generateIcon" src="./assets/generate.png" >
+            </div>
+
+        </div>
+
+        <textarea class="" id="outputHtml" rows="20" cols = "80" placeholder="Resultado..." autocomplete="off"></textarea>
     </div>
+</div>
+   
 
     <footer >
         <div>
