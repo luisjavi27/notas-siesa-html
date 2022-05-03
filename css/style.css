@@ -7,7 +7,6 @@
 body {
   display: flex;
   justify-content: center;
-
 }
 
 header {
@@ -23,18 +22,9 @@ header {
   top: 0;
 }
 
-header #headerTitulo {
-  position: relative;
-  right: -85%;
-  background-color: white;
-  height: 30px;
-  top: -15px;
-  
-}
-
 header #headerLogo {
   position: relative;
-  left: -110px;
+  left: 30px;
   height: 80px;
   top: 50%;
   background-color: white;
@@ -49,12 +39,14 @@ body form {
 
 body form ul li {
   display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  align-items: center;
 }
 
 body form ul li textarea {
-
   width: 900px;
-  min-height:20px;
+  min-height: 20px;
   max-height: 100px;
   text-transform: capitalize;
 }
@@ -64,10 +56,36 @@ textarea {
   display: block !important;
 }
 
+*::placeholder {
+  color: gray;
+  font-size: 14px;
+  padding-left: 5px;
+  font-weight: normal;
+}
+
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  height: 30px;
+  color: white;
+  font-size: 12px;
+  margin-top: 60px;
+}
+
+
+/************* CLASES ***************/
+
 .liElement {
   height: 20px;
   margin: 0px;
   padding: 2px;
+  width: fit-content;
 }
 
 .subtitulo {
@@ -76,11 +94,53 @@ textarea {
   margin: 0px 10px;
 }
 
-*::placeholder {
-  color: gray;
-  font-size: 14px;
-  padding-left: 5px;
-  font-weight: normal;
+.containerDeleteIcon {
+  border: none ;
+  margin-left: 10px;
+  background-color: rgb(206, 0, 0, 0.500);
+  aspect-ratio: 1/1;
+  height: 28px;
+  border-radius: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerDeleteIcon:hover,
+.containerDeleteIcon:hover #copyIcon {
+  background-color: rgba(206, 0, 0);
+}
+
+.deleteIcon {
+  background-color: rgb(206, 0, 0, 0);
+  height: 18px;
+  aspect-ratio: 1/1;
+}
+
+/************* ID ***************/
+
+
+#containerCopyIcon {
+  position: fixed;
+  right: 3%;
+  background-color: rgb(0, 173, 3, 0.5);
+  aspect-ratio: 1/1;
+  height: 50px;
+  bottom: 8%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#containerCopyIcon:hover,
+#containerCopyIcon:hover #copyIcon {
+  background-color: rgb(0, 173, 3);
+}
+
+#copyIcon {
+  background-color: rgb(0, 173, 3, 0.1);
+  height: 30px;
 }
 
 #titulo {
@@ -105,40 +165,45 @@ textarea {
   font-weight: bold;
 }
 
-#addButton{
-    width: 40%;
-    margin: 30px 30%;
-    height: 25px;
-    background-color: blue;
-    color: white;
-    font-weight: bold;
-    border: 0px;
-    border-radius: 5px;
-    cursor: pointer;
+#inputDescripcion1{
+  margin-right: 40px;  
 }
 
-#addButton:hover{
-    background-color: rgb(6, 6, 119);
+
+#addButton {
+  width: 40%;
+  margin: 30px 30%;
+  height: 25px;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  border: 0px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-#imageInput{
-    width:100%;
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+#addButton:hover {
+  background-color: rgb(6, 6, 119);
 }
 
-#imageInput input{
-    height: 20px;
-    margin-right: 10px;
-    width: 400px;
+#imageInput {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-#imageInput label{
-    height: 20px;
-    margin-right: 10px;
+#imageInput input {
+  height: 20px;
+  margin-right: 10px;
+  width: 400px;
+}
+
+#imageInput label {
+  height: 20px;
+  margin-right: 10px;
 }
 
 #image {
@@ -147,6 +212,7 @@ textarea {
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
+  margin-bottom: 60px;
 }
 
 #image p {
@@ -162,4 +228,8 @@ textarea {
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
+}
+
+#imageArea img {
+  display: none;
 }

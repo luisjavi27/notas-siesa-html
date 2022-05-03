@@ -11,33 +11,32 @@
   </head>
   <body>
     <header>
-        <img id="headerTitulo" src="./assets/file-code-regular.svg" >
-        <!-- <div id="headerLogo" >logo</div> -->
         <img id="headerLogo" src="./assets/logoBig.svg" >
     </header>
     <form>
-        <ul>
-            <li id="titulo">
-                <!-- <input class="liElement " type="text"  placeholder="...Producto...">          -->
-                <textarea class="liElement " rows="1" cols = "120"  placeholder="...Producto..." autocomplete="off"></textarea>   
-            </li>
-            <li>
-                <label class="liElement" for="subtitulo1">•</label><br>
-                <input class="liElement subtitulo" type="text" id="subtitulo1" placeholder="Subtitulo...">
-                <textarea class="liElement"  rows="1" cols = "60" placeholder="Descripción..." autocomplete="off"></textarea>
-                
-            </li>
+        <ul id="items">
+            <div id="itemsArea">
+                <li id="titulo">
+                    <textarea class="liElement " id="inputTitulo" rows="1" cols = "120"  placeholder="...Producto..." autocomplete="off"></textarea>   
+                </li>
+                <li>
+                    <label class="liElement" for="subtitulo1">•</label><br>
+                    <input class="liElement subtitulo" type="text" id="subtitulo1" placeholder="Subtitulo...">
+                    <textarea class="liElement" id="inputDescripcion1" rows="1" cols = "60" placeholder="Descripción..." autocomplete="off"></textarea>
+                </li>   
+            </div>
+            
             <button id="addButton">+</button>
 
             <div id="imageInput">
                 <label for="urlImageInput">URL imagen: </label>
                 <input id="urlImageInput" type="url" placeholder="https://www...">
-                <button name="loadImage"> Cargar </button>
+                <button id="btnCargarUrlImagen" name="loadImage"> Cargar </button>
             </div>
             <div id="image">
                 
                 <div id="imageArea"> 
-                    <img src="" alt="Error al cargar la imagen.">
+                    <img src="" alt="Error al cargar la imagen." >
                 </div>
                 <p>Imagen de referencia</p>
             </div>
@@ -46,6 +45,16 @@
         
         
     </form>
-  
+    <div id="containerCopyIcon">
+        <img id="copyIcon" src="./assets/file-code-regular.svg" >
+    </div>
+
+    <footer >
+        <div>
+            <p>Realizado para Precisur SAS. por LJI.</p>
+        </div>
+
+    </footer>
+    <script src="./renderer.js"></script>
   </body>
 </html>

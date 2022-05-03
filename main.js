@@ -1,9 +1,9 @@
 const { app, BrowserWindow } = require("electron");
 
-function crearVentana() {
+function crearVentanaPrincipal() {
   const ventanaPrincipal = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 900,
+    height: 900,
     icon: "./assets/favicon.png",
     webPreferences: {
       nodeIntegration: true,
