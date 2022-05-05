@@ -24,20 +24,24 @@
                     <label class="liElement" for="subtitulo1">•</label><br>
                     <input class="liElement subtitulo" type="text" id="subtitulo1" placeholder="Subtitulo...">
                     <textarea class="liElement" id="inputDescripcion1" rows="1" cols = "60" placeholder="Descripción..." autocomplete="off"></textarea>
+                    <button type="button" class="containerDeleteIcon" >
+                        <img  class="deleteIcon" id=deleteItem1 src="./assets/trash-can-regular.svg" alt="Deleteitem">
+                    </button>
                 </li>   
             </div>
 
-            <button id="addButton">+</button>
+            <button id="addButton" type="button">+</button>
 
             <div id="imageInput">
                 <label for="urlImageInput">URL imagen: </label>
                 <input id="urlImageInput" type="url" placeholder="https://www...">
-                <div id="btnCargarUrlImagen"  > Cargar </div>
+                <button type="button" id="btnCargarUrlImagen"  > Cargar </button>
+                <button type="button" id="btnLimpiarUrlImagen"  > Limpiar </button>
             </div>
             <div id="image">
                 
                 <div id="imageArea"> 
-                    <img src="" alt="Error al cargar la imagen." >
+                    <img src=""  style="display:none;" alt="Error al cargar la imagen." >
                 </div>
                 <p>Imagen de referencia</p>
             </div>
@@ -59,7 +63,7 @@
 
         </div>
 
-        <textarea class="" id="outputHtml" rows="20" cols = "80" placeholder="Resultado..." autocomplete="off"></textarea>
+        <textarea class="" id="outputHtml" rows="20" cols = "80" placeholder="Resultado..." autocomplete="off" spellcheck="false"></textarea>
     </div>
 </div>
    
